@@ -17,3 +17,5 @@ jobs:
     - run: source script-mac.sh
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v2
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
